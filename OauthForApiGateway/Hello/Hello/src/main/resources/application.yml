@@ -1,0 +1,14 @@
+#logging:
+#  level:
+#    org.springframework.security: DEBUG
+#    org.springframework.security.oauth2: DEBUG
+#    org.springframework.security.oauth2.server.resource: DEBUG
+#    org.springframework.web: DEBUG
+#spring:
+#  security:
+#    oauth2:
+#      resourceserver:
+#        opaque-token:
+#          introspection-uri: https://oauth2.googleapis.com/tokeninfo
+#          client-id: "8527103455-mk5j8ernqoh5v8k70ti3p2q6ejm5u6jk.apps.googleusercontent.com"
+#          client-secret: "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"

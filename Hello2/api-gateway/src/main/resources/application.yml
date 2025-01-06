@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: HELLO
+          uri: lb://HELLO
+          predicates:
+            - Path=/greet/**
+    loadbalancer:
+      config:
+        HELLO:
+          secure: true  # Forces HTTPS for the HELLO service
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 8527103455-mk5j8ernqoh5v8k70ti3p2q6ejm5u6jk.apps.googleusercontent.com
+            client-secret: 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
+
+
+  main:
+    web-application-type: reactive
+    allow-bean-definition-overriding: true
+
+
+
